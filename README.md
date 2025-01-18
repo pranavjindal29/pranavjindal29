@@ -1,3 +1,10 @@
+<h1 align="center">Hello World!👋, Pranav here!!</h1>
+
+### **✨ Passionate Developer | Curious Innovator | Problem Solver**
+
+🚀 Currently exploring exciting opportunities to craft innovative solutions and push the boundaries of technology, constantly learning and evolving, driven by curiosity to create impactful digital experiences that make a difference.
+
+---
 
 <div align="center">
   <img align='right' src="https://images.squarespace-cdn.com/content/v1/5769fc401b631bab1addb2ab/1541580611624-TE64QGKRJG8SWAIUS7NS/ke17ZwdGBToddI8pDm48kPoswlzjSVMM-SxOp7CV59BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6FXy8c9PWtBlqAVlUS5izpdcIXDZqDYvprRqZ29Pw0o/coding-freak.gif" width="259" height="259">
@@ -18,13 +25,6 @@
         time.sleep(1)
     
 ````
-
-<h1 align="center">Hello World!👋, Pranav here!!</h1>
-
-### **✨ Passionate Developer | Curious Innovator | Problem Solver**
-
-🚀 Currently exploring exciting opportunities to craft innovative solutions and push the boundaries of technology, constantly learning and evolving, driven by curiosity to create impactful digital experiences that make a difference.
-
 ---
 
 ## About Me
