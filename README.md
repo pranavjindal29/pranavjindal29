@@ -34,7 +34,7 @@
 - 🌱 Immersing myself in the world of **Machine Learning**, constantly evolving my skills.  
 - 📫 **Get in touch**: [jindalpranav944@gmail.com](mailto:jindalpranav944@gmail.com)
 - ⚡ **Fun Fact**: I can't resist pizza 🍕 and spontaneous adventures—whether coding or exploring!
-![snake gif](https://github.com/pranavjindal29/pranavjindal29/blob/output/github-snake-dark.svg)
+![snake gif](https://github.com/pranavjindal29/pranavjindal29/blob/output/github-snake.svg)
 
 ---
 
