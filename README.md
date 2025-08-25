@@ -29,7 +29,8 @@
 
 ## About Me
 
-- 📚 **CSE Undergrad** at VIT – Living the dream of blending innovation with code.  
+- 📚 **Project Research Associate** at IIT-R – Diving into Computer Vision & Video Analytics
+- 📚 **CSE Graduate** at VIT – Living the dream of blending innovation with code.  
 - 💻 **Collaborating on impactful web dev projects** – Let’s build something extraordinary together!  
 - 🌱 Immersing myself in the world of **Machine Learning**, constantly evolving my skills.  
 - 📫 **Get in touch**: [jindalpranav944@gmail.com](mailto:jindalpranav944@gmail.com)
