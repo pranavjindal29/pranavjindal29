@@ -73,9 +73,8 @@
   <img width="99%" src="https://github-readme-activity-graph.vercel.app/graph?username=pranavjindal29&theme=tokyo-night&hide_border=true&area=true&height=320" alt="Pranav's contribution graph" />
 </p>
 
----
-
-<p align="center">
+## Let it slither 🐍
+<p align="center" style="margin-top:-18px; margin-bottom:0;">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pranavjindal29/pranavjindal29/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pranavjindal29/pranavjindal29/output/github-snake.svg" />
