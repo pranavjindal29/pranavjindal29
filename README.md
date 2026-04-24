@@ -1,23 +1,23 @@
 <div align="center">
-  <img src="./assets/hero-typing.gif" width="660" alt="Typing heading" /><br />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-typing.gif" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-typing-light.gif" />
+    <img src="./assets/hero-typing-light.gif" width="660" alt="Hello world, Pranav here" />
+  </picture><br />
   <img src="./assets/hero-divider.svg" width="240" alt="Hero divider" /><br />
 
   <p style="margin: 6px 0;"><strong>AI Researcher | Software Engineer | Applied ML Builder</strong></p>
   <p style="margin: 6px 0;">I work across wireless systems, software engineering, and practical ML with a strong bias for reliable, thoughtful execution.</p>
 </div>
 
-<table width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="60%" align="left" valign="top">
-      <img src="./assets/build-style-card.svg" width="100%" alt="Build style code card" />
-    </td>
-    <td width="40%" align="right" valign="top">
-      <div align="right">
-        <img src="./assets/workspace-gif-card.svg" width="100%" alt="Developer workspace card" />
-      </div>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/build-style-card.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/build-style-card-light.svg" />
+    <img src="./assets/build-style-card-light.svg" width="58%" alt="Build style code card" />
+  </picture>
+  <img src="./assets/workspace-gif-card.svg" width="38%" alt="Developer workspace card" />
+</p>
 
 ## About Me
 
@@ -38,7 +38,11 @@
 ## Tech I Work With
 
 <p align="center">
-  <img src="./assets/core-label.svg" width="84%" alt="Core" /><br />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/core-label.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/core-label-light.svg" />
+    <img src="./assets/core-label-light.svg" width="84%" alt="Core" />
+  </picture><br />
   <img
     src="https://skillicons.dev/icons?i=linux,bash,python,c,cpp,docker,mysql,git,github,postgres&perline=10"
     width="84%"
@@ -47,7 +51,11 @@
 </p>
 
 <p align="center">
-  <img src="./assets/also-comfortable-with-label.svg" width="84%" alt="Also Comfortable With" /><br />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/also-comfortable-with-label.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/also-comfortable-with-label-light.svg" />
+    <img src="./assets/also-comfortable-with-label-light.svg" width="84%" alt="Also Comfortable With" />
+  </picture><br />
   <img
     src="https://skillicons.dev/icons?i=js,ts,nodejs,express,react,mongodb,html,css,githubactions,vscode&perline=10"
     width="84%"
@@ -58,16 +66,19 @@
 ## GitHub Pulse
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=pranavjindal29&show_icons=true&theme=tokyonight&hide_border=true" alt="Pranav's GitHub stats" />
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=pranavjindal29&theme=tokyonight&hide_border=true" alt="Pranav's GitHub streak" />
+  <img align="top" width="49.5%" src="https://github-readme-stats.vercel.app/api?username=pranavjindal29&show_icons=true&theme=tokyonight&hide_border=true&card_width=495" alt="Pranav's GitHub stats" /><img align="top" width="49.5%" src="https://streak-stats.demolab.com?user=pranavjindal29&theme=tokyonight&hide_border=true&card_width=495&card_height=195" alt="Pranav's GitHub streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=pranavjindal29&theme=tokyo-night&hide_border=true&area=true" alt="Pranav's contribution graph" />
+  <img width="99%" src="https://github-readme-activity-graph.vercel.app/graph?username=pranavjindal29&theme=tokyo-night&hide_border=true&area=true&height=320" alt="Pranav's contribution graph" />
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://github.com/pranavjindal29/pranavjindal29/blob/output/github-snake.svg" alt="GitHub contribution snake" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pranavjindal29/pranavjindal29/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pranavjindal29/pranavjindal29/output/github-snake.svg" />
+    <img src="https://raw.githubusercontent.com/pranavjindal29/pranavjindal29/output/github-snake.svg" alt="GitHub contribution snake" />
+  </picture>
 </p>
