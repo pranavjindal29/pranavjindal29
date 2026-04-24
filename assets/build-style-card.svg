@@ -1,0 +1,81 @@
+<svg width="720" height="500" viewBox="0 0 720 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="500" rx="18" fill="#1E1E1E"/>
+  <rect x="1" y="1" width="718" height="498" rx="17" stroke="#2D2D30"/>
+  <rect width="720" height="54" rx="18" fill="#252526"/>
+  <path d="M0 54H720" stroke="#2D2D30"/>
+
+  <circle cx="28" cy="27" r="7" fill="#FF5F56"/>
+  <circle cx="50" cy="27" r="7" fill="#FFBD2E"/>
+  <circle cx="72" cy="27" r="7" fill="#27C93F"/>
+  <text x="360" y="33" fill="#D4D4D4" font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="18" text-anchor="middle">build_style.py</text>
+
+  <g font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="20">
+    <text x="26" y="92">
+      <tspan fill="#569CD6">def</tspan>
+      <tspan fill="#D4D4D4"> </tspan>
+      <tspan fill="#DCDCAA">build_with_intent</tspan>
+      <tspan fill="#D4D4D4">(problem, signal):</tspan>
+    </text>
+
+    <text x="52" y="128">
+      <tspan fill="#C586C0">if</tspan>
+      <tspan fill="#D4D4D4"> signal.</tspan>
+      <tspan fill="#DCDCAA">needs_clarity</tspan>
+      <tspan fill="#D4D4D4">():</tspan>
+    </text>
+
+    <text x="84" y="164">
+      <tspan fill="#9CDCFE">signal</tspan>
+      <tspan fill="#D4D4D4"> = </tspan>
+      <tspan fill="#DCDCAA">refine_signal</tspan>
+      <tspan fill="#D4D4D4">(problem)</tspan>
+    </text>
+
+    <text x="52" y="214">
+      <tspan fill="#9CDCFE">system</tspan>
+      <tspan fill="#D4D4D4"> = </tspan>
+      <tspan fill="#DCDCAA">map_constraints</tspan>
+      <tspan fill="#D4D4D4">(problem, signal)</tspan>
+    </text>
+
+    <text x="52" y="250">
+      <tspan fill="#9CDCFE">risks</tspan>
+      <tspan fill="#D4D4D4"> = </tspan>
+      <tspan fill="#DCDCAA">find_failure_modes</tspan>
+      <tspan fill="#D4D4D4">(system)</tspan>
+    </text>
+
+    <text x="52" y="300">
+      <tspan fill="#C586C0">if</tspan>
+      <tspan fill="#D4D4D4"> risks.</tspan>
+      <tspan fill="#DCDCAA">high_impact</tspan>
+      <tspan fill="#D4D4D4">():</tspan>
+    </text>
+
+    <text x="84" y="336">
+      <tspan fill="#9CDCFE">solution</tspan>
+      <tspan fill="#D4D4D4"> = </tspan>
+      <tspan fill="#DCDCAA">simplify_for_reliability</tspan>
+      <tspan fill="#D4D4D4">(system)</tspan>
+    </text>
+
+    <text x="52" y="372">
+      <tspan fill="#C586C0">else</tspan>
+      <tspan fill="#D4D4D4">:</tspan>
+    </text>
+
+    <text x="84" y="408">
+      <tspan fill="#9CDCFE">solution</tspan>
+      <tspan fill="#D4D4D4"> = </tspan>
+      <tspan fill="#DCDCAA">design_for_scale</tspan>
+      <tspan fill="#D4D4D4">(system)</tspan>
+    </text>
+
+    <text x="52" y="458">
+      <tspan fill="#569CD6">return</tspan>
+      <tspan fill="#D4D4D4"> </tspan>
+      <tspan fill="#DCDCAA">ship_when_it_holds_up</tspan>
+      <tspan fill="#D4D4D4">(solution)</tspan>
+    </text>
+  </g>
+</svg>
