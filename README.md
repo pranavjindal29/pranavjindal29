@@ -14,9 +14,9 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/build-style-card.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/build-style-card-light.svg" />
-    <img src="./assets/build-style-card-light.svg" width="58%" alt="Build style code card" />
-  </picture>
-  <img src="./assets/workspace-gif-card.svg" width="38%" alt="Developer workspace card" />
+    <img src="./assets/build-style-card-light.svg" width="57.25%" alt="Build style code card" />
+  </picture>&nbsp;
+  <img src="./assets/workspace-gif-card.svg" width="38.2%" alt="Developer workspace card" />
 </p>
 
 ## About Me
