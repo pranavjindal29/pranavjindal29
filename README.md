@@ -66,11 +66,23 @@
 ## GitHub Pulse
 
 <p align="center">
-  <img align="top" width="49.5%" src="https://github-readme-stats.vercel.app/api?username=pranavjindal29&show_icons=true&theme=tokyonight&hide_border=true&card_width=495" alt="Pranav's GitHub stats" /><img align="top" width="49.5%" src="https://streak-stats.demolab.com?user=pranavjindal29&theme=tokyonight&hide_border=true&card_width=495&card_height=195" alt="Pranav's GitHub streak" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg" />
+    <img align="top" width="48.9%" style="margin-right: 1.2%;" src="./assets/github-stats-light.svg" alt="Pranav's GitHub stats" />
+  </picture><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-streak.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-streak-light.svg" />
+    <img align="top" width="48.9%" src="./assets/github-streak-light.svg" alt="Pranav's GitHub streak" />
+  </picture>
 </p>
 
 <p align="center">
-  <img width="99%" src="https://github-readme-activity-graph.vercel.app/graph?username=pranavjindal29&theme=tokyo-night&hide_border=true&area=true&height=320" alt="Pranav's contribution graph" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-activity-graph.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-activity-graph-light.svg" />
+    <img width="99%" src="./assets/github-activity-graph-light.svg" alt="Pranav's contribution graph" />
+  </picture>
 </p>
 
 ## Let it slither 🐍

@@ -1,0 +1,93 @@
+name: Update GitHub Pulse Cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - assets/github-stats.svg
+      - assets/github-stats-light.svg
+      - assets/github-streak.svg
+      - assets/github-streak-light.svg
+      - assets/github-activity-graph.svg
+      - assets/github-activity-graph-light.svg
+
+permissions:
+  contents: write
+
+jobs:
+  update-pulse-cards:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate themed stats cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/render-github-stats-fallback.mjs assets/github-stats.svg ${{ github.repository_owner }} dark
+          node scripts/render-github-stats-fallback.mjs assets/github-stats-light.svg ${{ github.repository_owner }} light
+
+      - name: Refresh streak and activity graph cards
+        run: |
+          set -euo pipefail
+
+          download_card() {
+            target="$1"
+            primary_url="$2"
+            fallback_url="${3:-}"
+            tmp_file="$(mktemp)"
+
+            if curl -fsSL --retry 5 --retry-all-errors -A "Mozilla/5.0" "$primary_url" -o "$tmp_file"; then
+              :
+            elif [ -n "$fallback_url" ] && curl -fsSL --retry 5 --retry-all-errors -A "Mozilla/5.0" "$fallback_url" -o "$tmp_file"; then
+              :
+            else
+              echo "Skipping $target because both sources failed."
+              rm -f "$tmp_file"
+              return 0
+            fi
+
+            if grep -qi "<svg" "$tmp_file"; then
+              mv "$tmp_file" "$target"
+            else
+              echo "Skipping $target because the download was not an SVG."
+              rm -f "$tmp_file"
+            fi
+          }
+
+          download_card \
+            assets/github-streak.svg \
+            "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&card_width=495&card_height=195" \
+            "https://camo.githubusercontent.com/db3c023835ec50e6854548556191c4d26354eaffec61f6878941c931c1b6cfae/68747470733a2f2f73747265616b2d73746174732e64656d6f6c61622e636f6d3f757365723d7072616e61766a696e64616c3239267468656d653d746f6b796f6e6967687426686964655f626f726465723d7472756526636172645f77696474683d34393526636172645f6865696768743d313935"
+
+          download_card \
+            assets/github-streak-light.svg \
+            "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=default&hide_border=true&card_width=495&card_height=195"
+
+          download_card \
+            assets/github-activity-graph.svg \
+            "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=tokyo-night&hide_border=true&area=true&height=320" \
+            "https://camo.githubusercontent.com/51e620ebfe07960693c0c489c843a2fee041a2e556d3fbaf9dccdcb90b9e7a14/68747470733a2f2f6769746875622d726561646d652d61637469766974792d67726170682e76657263656c2e6170702f67726170683f757365726e616d653d7072616e61766a696e64616c3239267468656d653d746f6b796f2d6e6967687426686964655f626f726465723d7472756526617265613d74727565266865696768743d333230"
+
+          download_card \
+            assets/github-activity-graph-light.svg \
+            "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=github-light&hide_border=true&area=true&height=320"
+
+          if [ ! -s assets/github-activity-graph-light.svg ] || ! grep -qi "<svg" assets/github-activity-graph-light.svg; then
+            node scripts/render-github-activity-graph-light.mjs assets/github-activity-graph.svg assets/github-activity-graph-light.svg
+          fi
+
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add assets/github-stats.svg assets/github-stats-light.svg assets/github-streak.svg assets/github-streak-light.svg assets/github-activity-graph.svg assets/github-activity-graph-light.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "Update GitHub pulse cards [skip ci]"
+          git push
