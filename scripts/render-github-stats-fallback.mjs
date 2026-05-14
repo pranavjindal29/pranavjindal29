@@ -14,7 +14,7 @@ const themes = {
     label: "#38bdae",
   },
   light: {
-    background: "#f7f9fc",
+    background: "#FFFEFE",
     divider: "#d0d7de",
     title: "#8250df",
     value: "#0969da",
