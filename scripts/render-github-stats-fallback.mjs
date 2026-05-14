@@ -123,7 +123,7 @@ async function main() {
       100% { opacity: 1; transform: translateY(0) scale(1); }
     }
   </style>
-  <rect width="495" height="195" rx="4.5" fill="${theme.background}"/>
+  <rect stroke="#000000" stroke-opacity="0" fill="${theme.background}" rx="4.5" x="0.5" y="0.5" width="494" height="194"/>
   <line x1="165" y1="28" x2="165" y2="170" stroke="${theme.divider}" stroke-width="1" style="opacity: 0; animation: fade-in-up 0.45s ease-out forwards 0.15s"/>
   <line x1="330" y1="28" x2="330" y2="170" stroke="${theme.divider}" stroke-width="1" style="opacity: 0; animation: fade-in-up 0.45s ease-out forwards 0.2s"/>
   <text

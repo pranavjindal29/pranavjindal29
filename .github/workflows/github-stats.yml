@@ -83,6 +83,8 @@ jobs:
             node scripts/render-github-activity-graph-light.mjs assets/github-activity-graph.svg assets/github-activity-graph-light.svg
           fi
 
+          node scripts/tint-github-activity-graph.mjs assets/github-activity-graph-light.svg "#0969da"
+
       - name: Commit updated cards
         run: |
           git config user.name "github-actions"
