@@ -8,6 +8,8 @@ const statsYear = new Date().getUTCFullYear();
 const themes = {
   dark: {
     background: "#1a1b27",
+    cardStroke: "#000000",
+    cardStrokeOpacity: "0",
     divider: "#E4E2E2",
     title: "#bf91f3",
     value: "#70a5fd",
@@ -15,6 +17,8 @@ const themes = {
   },
   light: {
     background: "#FFFEFE",
+    cardStroke: "#d0d7de",
+    cardStrokeOpacity: "1",
     divider: "#d0d7de",
     title: "#8250df",
     value: "#0969da",
@@ -123,7 +127,7 @@ async function main() {
       100% { opacity: 1; transform: translateY(0) scale(1); }
     }
   </style>
-  <rect stroke="#000000" stroke-opacity="0" fill="${theme.background}" rx="4.5" x="0.5" y="0.5" width="494" height="194"/>
+  <rect stroke="${theme.cardStroke}" stroke-opacity="${theme.cardStrokeOpacity}" fill="${theme.background}" rx="4.5" x="0.5" y="0.5" width="494" height="194"/>
   <line x1="165" y1="28" x2="165" y2="170" stroke="${theme.divider}" stroke-width="1" style="opacity: 0; animation: fade-in-up 0.45s ease-out forwards 0.15s"/>
   <line x1="330" y1="28" x2="330" y2="170" stroke="${theme.divider}" stroke-width="1" style="opacity: 0; animation: fade-in-up 0.45s ease-out forwards 0.2s"/>
   <text

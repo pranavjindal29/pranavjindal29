@@ -70,6 +70,8 @@ jobs:
             assets/github-streak-light.svg \
             "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=default&hide_border=true&card_width=495&card_height=195"
 
+          node scripts/style-light-streak-card.mjs assets/github-streak-light.svg "#d0d7de"
+
           download_card \
             assets/github-activity-graph.svg \
             "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=tokyo-night&hide_border=true&area=true&height=320" \
@@ -83,7 +85,7 @@ jobs:
             node scripts/render-github-activity-graph-light.mjs assets/github-activity-graph.svg assets/github-activity-graph-light.svg
           fi
 
-          node scripts/tint-github-activity-graph.mjs assets/github-activity-graph-light.svg "#0969da"
+          node scripts/tint-github-activity-graph.mjs assets/github-activity-graph-light.svg "#0969da" "#d0d7de"
 
       - name: Commit updated cards
         run: |

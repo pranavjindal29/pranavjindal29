@@ -7,10 +7,11 @@ async function main() {
   const svg = await fs.readFile(inputPath, "utf8");
 
   const lightSvg = svg
-    .replaceAll("#1a1b27", "#f7f9fc")
+    .replaceAll("#1a1b27", "#FFFEFE")
     .replaceAll("#70a5fd", "#0969da")
-    .replaceAll("#a9b1d6", "#57606a")
+    .replaceAll("#a9b1d6", "#0969da")
     .replaceAll("#E4E2E2", "#d0d7de")
+    .replaceAll('rx="0"', 'rx="12"')
     .replaceAll("stroke:#0000;", "stroke:#d0d7de;");
 
   await fs.writeFile(outputPath, lightSvg, "utf8");

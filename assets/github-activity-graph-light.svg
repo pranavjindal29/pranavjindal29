@@ -6,8 +6,8 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg">
             <rect xmlns="http://www.w3.org/2000/svg" data-testid="card_bg" id="cardBg"
-            x="0" y="0" rx="0" height="100%" stroke="#E4E2E2" fill-opacity="1"
-            width="100%" fill="#ffffff" stroke-opacity="1" style="stroke:#0000; stroke-width:1;"/>
+            x="0" y="0" rx="12" height="100%" stroke="#E4E2E2" fill-opacity="1"
+            width="100%" fill="#ffffff" stroke-opacity="1" style="stroke:#d0d7de; stroke-width:1;"/>
 
             <style>
                 body {
@@ -108,7 +108,7 @@
     .ct-point {
       stroke-width: 10px;
       stroke-linecap: round;
-      stroke: #40c463;
+      stroke: #0969da;
       animation: blink 1s ease-in-out forwards;
     }
 
@@ -127,7 +127,7 @@
 
     .ct-series-a .ct-area,
     .ct-series-a .ct-slice-pie {
-      fill: #9be9a8;
+      fill: #0969da;
     }
 
     .ct-label .ct-horizontal {
