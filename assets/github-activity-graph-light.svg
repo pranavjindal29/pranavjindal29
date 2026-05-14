@@ -116,7 +116,7 @@
       stroke-width: 4px;
       stroke-dasharray: 5000;
       stroke-dashoffset: 5000;
-      stroke: #9be9a8;
+      stroke: #0969da;
       animation: dash 5s ease-in-out forwards;
     }
 

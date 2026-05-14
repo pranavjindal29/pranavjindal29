@@ -13,15 +13,15 @@ async function main() {
   const svg = await fs.readFile(filePath, "utf8");
   const updatedSvg = svg
     .replace(
-      /(\.ct-point\s*\{[\s\S]*?stroke:\s*)#[0-9a-fA-F]+(;)/,
+      /(\n\s*\.ct-point\s*\{[^}]*?stroke:\s*)#[0-9a-fA-F]+(;)/,
       `$1${accentColor}$2`,
     )
     .replace(
-      /(\.ct-line\s*\{[\s\S]*?stroke:\s*)#[0-9a-fA-F]+(;)/,
+      /(\n\s*\.ct-line\s*\{[^}]*?stroke:\s*)#[0-9a-fA-F]+(;)/,
       `$1${accentColor}$2`,
     )
     .replace(
-      /(\.ct-series-a \.ct-area,\s*[\s\S]*?fill:\s*)#[0-9a-fA-F]+(;)/,
+      /(\n\s*\.ct-series-a \.ct-area,\s*[\s\S]*?fill:\s*)#[0-9a-fA-F]+(;)/,
       `$1${accentColor}$2`,
     )
     .replace(
