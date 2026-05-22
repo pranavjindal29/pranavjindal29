@@ -6,7 +6,7 @@
   </picture><br />
   <img src="./assets/hero-divider.svg" width="240" alt="Hero divider" /><br />
 
-  <p style="margin: 6px 0;"><strong>AI Researcher | Software Engineer | Applied ML Builder</strong></p>
+  <p style="margin: 6px 0;"><strong>AI Researcher | ML Engineer | Software Developer</strong></p>
   <p style="margin: 6px 0;">I work across wireless systems, software engineering, and practical ML with a strong bias for reliable, thoughtful execution.</p>
 </div>
 
