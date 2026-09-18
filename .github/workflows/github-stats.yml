@@ -26,14 +26,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate themed stats cards
+      - name: Generate themed stats and streak cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           node scripts/render-github-stats-fallback.mjs assets/github-stats.svg ${{ github.repository_owner }} dark
           node scripts/render-github-stats-fallback.mjs assets/github-stats-light.svg ${{ github.repository_owner }} light
+          node scripts/render-github-streak.mjs assets/github-streak.svg assets/github-streak-light.svg ${{ github.repository_owner }}
 
-      - name: Refresh streak and activity graph cards
+      - name: Refresh activity graph cards
         run: |
           set -euo pipefail
 
@@ -60,17 +61,6 @@ jobs:
               rm -f "$tmp_file"
             fi
           }
-
-          download_card \
-            assets/github-streak.svg \
-            "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&card_width=495&card_height=195" \
-            "https://camo.githubusercontent.com/db3c023835ec50e6854548556191c4d26354eaffec61f6878941c931c1b6cfae/68747470733a2f2f73747265616b2d73746174732e64656d6f6c61622e636f6d3f757365723d7072616e61766a696e64616c3239267468656d653d746f6b796f6e6967687426686964655f626f726465723d7472756526636172645f77696474683d34393526636172645f6865696768743d313935"
-
-          download_card \
-            assets/github-streak-light.svg \
-            "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=default&hide_border=true&card_width=495&card_height=195"
-
-          node scripts/style-light-streak-card.mjs assets/github-streak-light.svg "#d0d7de"
 
           download_card \
             assets/github-activity-graph.svg \
