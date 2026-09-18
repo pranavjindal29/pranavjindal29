@@ -77,13 +77,13 @@
   </picture>
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/github-activity-graph.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/github-activity-graph-light.svg" />
     <img width="99%" src="./assets/github-activity-graph-light.svg" alt="Pranav's contribution graph" />
   </picture>
-</p>
+</p> -->
 
 ## Let it slither 🐍
 <p align="center" style="margin-top:-18px; margin-bottom:0;">
