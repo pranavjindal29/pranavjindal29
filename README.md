@@ -7,7 +7,7 @@
   <img src="./assets/hero-divider.svg" width="240" alt="Hero divider" /><br />
 
   <p style="margin: 6px 0;"><strong>Software Engineer | Distributed Systems | 5G Networks</strong></p>
-  <p style="margin: 6px 0;">I build reliable Python tooling for telecom control-plane analysis, automation, and distributed test environments, backed by 5G systems research.</p>
+  <p style="margin: 6px 0;">I build reliable Python tooling for telecom control-plane analysis, automation, and distributed test environments, backed by 5G research.</p>
 </div>
 
 <p align="center">
@@ -21,11 +21,11 @@
 
 ## Engineering Profile
 
-- **Project Research Associate at IIT Bombay**, working on **5G core systems, wireless networks, and control-plane experimentation**.
+- **Project Research Associate at IIT Bombay**, working on **5G core, wireless networks, and control-plane experimentation**.
 - I develop Python-based automation for repeatable experiments, system analysis, and cross-component failure diagnosis.
 - Beyond telecom, I have hands-on experience building distributed data workflows with **PySpark, PostgreSQL, and Docker**.
 - **CSE graduate from VIT**, interested in backend engineering, infrastructure, networking, and distributed systems.
-- I value clear system behavior, observable failures, reproducible environments, and software that remains reliable beyond the initial demo.
+- I value clear system behavior, observable failures, reproducibility, and software that remains reliable beyond the demo.
 - Best reached at [jindalpranav944@gmail.com](mailto:jindalpranav944@gmail.com).
 
 ## Current Direction
