@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 195" width="495" height="195" role="img" aria-labelledby="title desc">
   <title id="title">Pranav Jindal GitHub contribution streak</title>
-  <desc id="desc">1,531 total contributions, a 0-day current streak, and a 45-day longest streak.</desc>
+  <desc id="desc">1,532 total contributions, a 0-day current streak, and a 45-day longest streak.</desc>
   <style>
     @keyframes currstreak { 0% { font-size: 3px; opacity: 0.2; } 80% { font-size: 34px; opacity: 1; } 100% { font-size: 28px; opacity: 1; } }
     @keyframes fadein { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -14,14 +14,14 @@
     <line x1="165" y1="28" x2="165" y2="170" stroke-width="1" stroke="#E4E2E2"/>
     <line x1="330" y1="28" x2="330" y2="170" stroke-width="1" stroke="#E4E2E2"/>
     <g fill="#70A5FD" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif">
-      <text x="82.5" y="80" font-size="28" font-weight="700" style="opacity:0;animation:fadein .5s linear forwards .6s">1,531</text>
+      <text x="82.5" y="80" font-size="28" font-weight="700" style="opacity:0;animation:fadein .5s linear forwards .6s">1,532</text>
       <text x="82.5" y="116" font-size="14" style="opacity:0;animation:fadein .5s linear forwards .7s">Total Contributions</text>
       <text x="412.5" y="80" font-size="28" font-weight="700" style="opacity:0;animation:fadein .5s linear forwards 1.2s">45</text>
       <text x="412.5" y="116" font-size="14" style="opacity:0;animation:fadein .5s linear forwards 1.3s">Longest Streak</text>
     </g>
     <g fill="#38BDAE" text-anchor="middle" font-family="'Segoe UI', Ubuntu, sans-serif" font-size="12">
       <text x="82.5" y="146" style="opacity:0;animation:fadein .5s linear forwards .8s">Jan 28, 2023 - Present</text>
-      <text x="247.5" y="166" style="opacity:0;animation:fadein .5s linear forwards .9s">Oct 17</text>
+      <text x="247.5" y="166" style="opacity:0;animation:fadein .5s linear forwards .9s">Oct 18</text>
       <text x="412.5" y="146" style="opacity:0;animation:fadein .5s linear forwards 1.4s">May 16 - Jun 29, 2025</text>
     </g>
     <circle cx="247.5" cy="71" r="40" fill="none" stroke="#BF91F3" stroke-width="5" mask="url(#mask_out_ring_behind_fire)" style="opacity:0;animation:fadein .5s linear forwards .4s"/>
